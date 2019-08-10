@@ -1,0 +1,21 @@
+[submodule "balena-yocto-scripts"]
+	path = balena-yocto-scripts
+	url = https://github.com/balena-os/balena-yocto-scripts
+[submodule "layers/meta-balena"]
+	path = layers/meta-balena
+	url = https://github.com/balena-os/meta-balena
+[submodule "layers/meta-openembedded"]
+	path = layers/meta-openembedded
+	url = https://github.com/openembedded/meta-openembedded
+	branch = thud
+[submodule "layers/meta-rust"]
+	path = layers/meta-rust
+	url = https://github.com/meta-rust/meta-rust
+[submodule "layers/poky"]
+	path = layers/poky
+	url = https://github.com/balena-os/poky
+	branch = thud
+[submodule "layers/meta-st-stm32mp"]
+	path = layers/meta-st-stm32mp
+	url = https://github.com/STMicroelectronics/meta-st-stm32mp
+	branch = thud
