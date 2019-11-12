@@ -1,0 +1,63 @@
+Index: uboot-source/configs/stm32mp15_basic_defconfig
+===================================================================
+--- uboot-source.orig/configs/stm32mp15_basic_defconfig
++++ uboot-source/configs/stm32mp15_basic_defconfig
+@@ -20,7 +20,7 @@ CONFIG_SYS_PROMPT="STM32MP> "
+ # CONFIG_CMD_IMI is not set
+ # CONFIG_CMD_XIMG is not set
+ # CONFIG_CMD_EXPORTENV is not set
+-# CONFIG_CMD_IMPORTENV is not set
++CONFIG_CMD_IMPORTENV=y
+ CONFIG_CMD_MEMINFO=y
+ CONFIG_CMD_MEMTEST=y
+ CONFIG_CMD_ADC=y
+@@ -116,3 +116,7 @@ CONFIG_VIDEO_STM32_MAX_YRES=800
+ CONFIG_STM32MP_WATCHDOG=y
+ CONFIG_FDT_FIXUP_PARTITIONS=y
+ # CONFIG_EFI_LOADER is not set
++CONFIG_CMD_SETEXPR=y
++CONFIG_AUTOBOOT=y
++CONFIG_PARTITION_UUIDS=y
++CONFIG_CMD_PART=y
+Index: uboot-source/configs/stm32mp15_optee_defconfig
+===================================================================
+--- uboot-source.orig/configs/stm32mp15_optee_defconfig
++++ uboot-source/configs/stm32mp15_optee_defconfig
+@@ -11,7 +11,7 @@ CONFIG_SYS_PROMPT="STM32MP> "
+ # CONFIG_CMD_IMI is not set
+ # CONFIG_CMD_XIMG is not set
+ # CONFIG_CMD_EXPORTENV is not set
+-# CONFIG_CMD_IMPORTENV is not set
++CONFIG_CMD_IMPORTENV=y
+ CONFIG_CMD_MEMINFO=y
+ CONFIG_CMD_MEMTEST=y
+ CONFIG_CMD_ADC=y
+@@ -103,3 +103,7 @@ CONFIG_VIDEO_STM32_MAX_YRES=800
+ CONFIG_STM32MP_WATCHDOG=y
+ CONFIG_FDT_FIXUP_PARTITIONS=y
+ # CONFIG_EFI_LOADER is not set
++CONFIG_CMD_SETEXPR=y
++CONFIG_AUTOBOOT=y
++CONFIG_PARTITION_UUIDS=y
++CONFIG_CMD_PART=y
+Index: uboot-source/configs/stm32mp15_trusted_defconfig
+===================================================================
+--- uboot-source.orig/configs/stm32mp15_trusted_defconfig
++++ uboot-source/configs/stm32mp15_trusted_defconfig
+@@ -10,7 +10,7 @@ CONFIG_SYS_PROMPT="STM32MP> "
+ # CONFIG_CMD_IMI is not set
+ # CONFIG_CMD_XIMG is not set
+ # CONFIG_CMD_EXPORTENV is not set
+-# CONFIG_CMD_IMPORTENV is not set
++CONFIG_CMD_IMPORTENV=y
+ CONFIG_CMD_MEMINFO=y
+ CONFIG_CMD_MEMTEST=y
+ CONFIG_CMD_ADC=y
+@@ -102,3 +102,7 @@ CONFIG_VIDEO_STM32_MAX_YRES=800
+ CONFIG_STM32MP_WATCHDOG=y
+ CONFIG_FDT_FIXUP_PARTITIONS=y
+ # CONFIG_EFI_LOADER is not set
++CONFIG_CMD_SETEXPR=y
++CONFIG_AUTOBOOT=y
++CONFIG_PARTITION_UUIDS=y
++CONFIG_CMD_PART=y

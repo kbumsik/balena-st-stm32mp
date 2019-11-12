@@ -1,0 +1,20 @@
+Index: uboot-source/include/env_default.h
+===================================================================
+--- uboot-source.orig/include/env_default.h
++++ uboot-source/include/env_default.h
+@@ -8,6 +8,7 @@
+  */
+ 
+ #include <env_callback.h>
++#include <env_resin.h>
+ 
+ #ifdef DEFAULT_ENV_INSTANCE_EMBEDDED
+ env_t environment __UBOOT_ENV_SECTION__(environment) = {
+@@ -21,6 +22,7 @@ static char default_environment[] = {
+ #else
+ const uchar default_environment[] = {
+ #endif
++	RESIN_ENV
+ #ifndef CONFIG_USE_DEFAULT_ENV_FILE
+ #ifdef	CONFIG_ENV_CALLBACK_LIST_DEFAULT
+ 	ENV_CALLBACK_VAR "=" CONFIG_ENV_CALLBACK_LIST_DEFAULT "\0"

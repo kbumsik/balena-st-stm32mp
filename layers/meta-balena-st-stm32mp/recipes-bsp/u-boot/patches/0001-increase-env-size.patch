@@ -1,0 +1,13 @@
+Index: uboot-source/include/configs/stm32mp1.h
+===================================================================
+--- uboot-source.orig/include/configs/stm32mp1.h
++++ uboot-source/include/configs/stm32mp1.h
+@@ -48,7 +48,7 @@
+ /*
+  * Env parameters
+  */
+-#define CONFIG_ENV_SIZE				SZ_4K
++#define CONFIG_ENV_SIZE				SZ_8K
+ 
+ /* ATAGs */
+ #define CONFIG_CMDLINE_TAG
