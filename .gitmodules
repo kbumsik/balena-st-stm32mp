@@ -17,5 +17,5 @@
 	branch = thud
 [submodule "layers/meta-st-stm32mp"]
 	path = layers/meta-st-stm32mp
-	url = https://github.com/STMicroelectronics/meta-st-stm32mp
+	url = https://github.com/kbumsik/meta-st-stm32mp
 	branch = thud
