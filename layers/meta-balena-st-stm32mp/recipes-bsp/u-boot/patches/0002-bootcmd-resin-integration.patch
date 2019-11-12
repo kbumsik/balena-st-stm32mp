@@ -2,7 +2,7 @@ Index: uboot-source/configs/stm32mp15_basic_defconfig
 ===================================================================
 --- uboot-source.orig/configs/stm32mp15_basic_defconfig
 +++ uboot-source/configs/stm32mp15_basic_defconfig
-@@ -120,3 +120,4 @@ CONFIG_CMD_SETEXPR=y
+@@ -132,3 +132,4 @@ CONFIG_CMD_SETEXPR=y
  CONFIG_AUTOBOOT=y
  CONFIG_PARTITION_UUIDS=y
  CONFIG_CMD_PART=y
@@ -11,7 +11,7 @@ Index: uboot-source/configs/stm32mp15_optee_defconfig
 ===================================================================
 --- uboot-source.orig/configs/stm32mp15_optee_defconfig
 +++ uboot-source/configs/stm32mp15_optee_defconfig
-@@ -107,3 +107,4 @@ CONFIG_CMD_SETEXPR=y
+@@ -118,3 +118,4 @@ CONFIG_CMD_SETEXPR=y
  CONFIG_AUTOBOOT=y
  CONFIG_PARTITION_UUIDS=y
  CONFIG_CMD_PART=y
@@ -20,7 +20,7 @@ Index: uboot-source/configs/stm32mp15_trusted_defconfig
 ===================================================================
 --- uboot-source.orig/configs/stm32mp15_trusted_defconfig
 +++ uboot-source/configs/stm32mp15_trusted_defconfig
-@@ -106,3 +106,4 @@ CONFIG_CMD_SETEXPR=y
+@@ -117,3 +117,4 @@ CONFIG_CMD_SETEXPR=y
  CONFIG_AUTOBOOT=y
  CONFIG_PARTITION_UUIDS=y
  CONFIG_CMD_PART=y
@@ -29,9 +29,9 @@ Index: uboot-source/include/configs/stm32mp1.h
 ===================================================================
 --- uboot-source.orig/include/configs/stm32mp1.h
 +++ uboot-source/include/configs/stm32mp1.h
-@@ -183,7 +183,17 @@
- 	"usb_pgood_delay=2000\0" \
+@@ -266,7 +266,17 @@
  	STM32MP_MTDPARTS \
+ 	STM32MP_ANDROID \
  	BOOTENV \
 -	"boot_net_usb_start=true\0"
 +	"boot_net_usb_start=true\0" \
