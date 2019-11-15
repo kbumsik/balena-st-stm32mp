@@ -1,4 +1,4 @@
-#  balena-st-stm32mp repository
+#  STM32MP1 port for [balenaOS](https://github.com/balena-os)
 
 ## Clone/Initialize the repository
 
